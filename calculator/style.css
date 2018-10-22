@@ -1,0 +1,54 @@
+h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#container {
+    background-color: gray;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+#display {
+    margin: 5px auto;
+    background-color: white;
+    text-align: right;
+    width: 95%;
+    font-size: 25px;
+    padding: 4px;
+}
+
+#btns {
+    display: inline-block;
+    width: 74%;
+}
+
+#impBtns {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    text-align: right;
+}
+
+.btn, #btnCl, #btnRes {
+    width: 22%;
+    font-size: 20px;
+    margin: 3px;
+}
+
+#btnCl, #btnRes {
+    width: 80%;
+    color: white;
+    border-radius: 10%;
+}
+
+#btnCl {
+    background-color: red;
+}
+
+#btnRes {
+    height: 120px;
+    background-color: blue;
+}
