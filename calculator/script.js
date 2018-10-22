@@ -1,32 +1,37 @@
-let num = 0;
-let result = num;
+let num = '';
+let result = 0;
 let operator = false;
 
 // press number buttons
 const getNumber = (btnId) => {
-    num = Number(document.getElementById(btnId).innerHTML);
+    num += document.getElementById(btnId).innerHTML;
     document.getElementById('display').innerHTML = num;
-    switch (operator) {
-        case 0:
-            result += num;
-            break;
-        case 1:
-            result -= num;
-            break;
-        case 2:
-            result *= num;
-            break;
-        case 3:
-            result /= num;
-            break;
-        default:
-            result = num;
-    }
 };
 // press operators
 const operate = operatorType => {
+    switch (operator) {
+        case 0:
+            result += Number(num);
+            break;
+        case 1:
+            result -= Number(num);
+            break;
+        case 2:
+            result *= Number(num);
+            break;
+        case 3:
+            result /= Number(num);
+            break;
+        default:
+            if (result === 0) {
+                result = Number(num);
+            } else {
+                result = result;
+            }
+    }
     operator = operatorType;
     document.getElementById('display').innerHTML = result;
+    num = '';
 }
 
 // Press number buttons
@@ -40,6 +45,7 @@ document.getElementById('btn7').onclick = function() {getNumber('btn7')}
 document.getElementById('btn8').onclick = function() {getNumber('btn8')}
 document.getElementById('btn9').onclick = function() {getNumber('btn9')}
 document.getElementById('btn0').onclick = function() {getNumber('btn0')}
+document.getElementById('btnDot').onclick = function() {getNumber('btnDot')}
 
 // Press maths buttons
 document.getElementById('btnAdd').onclick = function() {operate(0)}
@@ -49,12 +55,12 @@ document.getElementById('btnDiv').onclick = function() {operate(3)}
 
 // Get result
 document.getElementById('btnRes').onclick = function() {
-    document.getElementById('display').innerHTML = result;
+    operate(10);
 }
 // Press clear button
 document.getElementById('btnCl').onclick = function() {
-    num = 0;
+    num = '';
     result = 0;
     operator = 10;
-    document.getElementById('display').innerHTML = result;
+    document.getElementById('display').innerHTML = 0;
 }
