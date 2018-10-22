@@ -53,8 +53,8 @@ document.getElementById('btnRes').onclick = function() {
 }
 // Press clear button
 document.getElementById('btnCl').onclick = function() {
-    let num = 0;
-    let result = 0;
-    let operator = 10;
+    num = 0;
+    result = 0;
+    operator = 10;
     document.getElementById('display').innerHTML = result;
 }
