@@ -8,9 +8,8 @@ body {
 }
 
 #intro {
-    height: 37rem;
-    padding-top: 15rem;
-    vertical-align: middle;
+    height: 85vh;
+    padding-top: 30vh;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -29,4 +28,8 @@ h1 {
 #projects {
     font-family: 'Roboto', sans-serif;
     padding: 50px;
+}
+
+.fas {
+    color: rgba(255,255,255,.5);
 }
