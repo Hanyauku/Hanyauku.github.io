@@ -6,6 +6,7 @@ $(document).ready(function() {
     var url = "https://www.goodreads.com/book/title.xml?key=bPHcIc1YFvxx6SJCCkJA&title=";
     searchTerm = searchTerm.split(' ').join('+');
     url += searchTerm;
+    console.log(url);
     $.get("http://query.yahooapis.com/v1/public/yql", {
       q: "select * from xml where url=\""+url+"\"",
       format: "json"
