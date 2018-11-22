@@ -7,7 +7,7 @@ $(document).ready(function() {
     searchTerm = searchTerm.split(' ').join('+');
     url += searchTerm;
     console.log(url);
-    $.get("http://query.yahooapis.com/v1/public/yql", {
+    $.get("https://query.yahooapis.com/v1/public/yql", {
       q: "select * from xml where url=\""+url+"\"",
       format: "json"
       },
