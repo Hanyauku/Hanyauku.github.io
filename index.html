@@ -4,29 +4,50 @@
         <meta charset="utf-8">
         <title>Polina Kochneva - WebDeveloper</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <!--
-    - Make footer
-    - add down button
-    - 
-    - Artify:
-    - fix image sizing
-    - fix footer
-
--->
     <body>
-        <div class="intro">
-            <h1>Polina Kochneva</h1>
-            <h3>Fullstack Web Developer</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MERN</li>
-                <li>LAMP</li>
+        <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark flex-column flex-md-row">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
             </ul>
+        </nav>
+        <div id="intro">
+            <div class="info">
+                <h1>Polina Kochneva</h1>
+                <h3>Fullstack Web Developer</h3>
+                <ul class="tech">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>MERN</li>
+                    <li>LAMP</li>
+                </ul>
+                <div class="links">
+                    <button type="button" class="btn btn-default btn-lg">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                    <button type="button" class="btn btn-default btn-lg">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button type="button" class="btn btn-default btn-lg">
+                        <i class="fab fa-mailchimp"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="card-deck">
+        <div class="next">
+            <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+        <div class="card-deck" id="projects">
             <div class="card bg-dark">
                 <a href="https://artify-me.herokuapp.com" target="_blank">
                     <img class="card-img-top" src="img/artify.png" alt="Artify webpage">
@@ -55,10 +76,5 @@
                 </div>
             </div>
         </div>
-        <footer>
-            linkedin, github, mail
-        </footer>
     </body>
 </html>
-
-<!-- <a href=calculator/index.html>Calculator Project</a> -->

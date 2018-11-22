@@ -6,3 +6,27 @@ body {
 * {
     text-align: center;
 }
+
+#intro {
+    height: 37rem;
+    padding-top: 15rem;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+}
+.tech li {
+    display: inline;
+    padding: 1rem;
+}
+
+.tech {
+    padding-inline-start: 0;
+}
+
+#projects {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+}
