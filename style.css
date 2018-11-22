@@ -23,6 +23,7 @@ h1 {
 
 .tech {
     padding-inline-start: 0;
+    padding: 0;
 }
 
 #projects {
